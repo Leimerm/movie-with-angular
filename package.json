@@ -8,19 +8,15 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
-  },
-  "engines": {
-    "node": "v12.18.3",
-    "npm": "6.14.6"
+    "heroku-postbuild": "ng build --prod=true --configuration=production"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.11",
-    "@angular/cli": "^10.1.7",
+    "@angular/cli": "~10.0.7",
     "@angular/common": "~10.0.11",
     "@angular/compiler": "~10.0.11",
-    "@angular/compiler-cli": "^10.0.14",
+    "@angular/compiler-cli": "~10.0.11",
     "@angular/core": "~10.0.11",
     "@angular/forms": "~10.0.11",
     "@angular/localize": "~10.0.11",
@@ -43,8 +39,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.7",
-    "@angular/cli": "^10.1.7",
-    "@angular/compiler-cli": "^10.0.14",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.12.68",
@@ -58,7 +52,9 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "tslint": "~6.1.0"
+  },
+  "engines": {
+    "node": "v12.18.3"
   }
 }
